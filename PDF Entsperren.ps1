@@ -7,7 +7,7 @@
    Entblockt nur Dateien mit ausreichenden Rechten und gibt eine Ãœbersicht aus.
 
 .PARAMETER Path
-   Der Basisordner, in dem gesucht werden soll (z. B. "P:\GEGS.GERALD.Thekla\").
+   Der Basisordner, in dem gesucht werden soll (z. B. "P:\").
 #>
 
 param(
@@ -94,3 +94,4 @@ $Results | Group-Object -Property Status | ForEach-Object {
 
 # Optional: Ergebnisse als CSV exportieren
 #$Results | Export-Csv -Path "$env:USERPROFILE\UnblockResults.csv" -NoTypeInformation -Encoding UTF8
+
